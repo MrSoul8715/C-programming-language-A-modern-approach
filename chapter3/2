@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int item;
+    float price;
+    int m, d, y;
+
+    printf("Enter item number: ");
+    scanf_s("%d", &item);
+    printf("Enter unit price: ");
+    scanf_s("%f", &price);
+    printf("Enter purchase date (mm/dd/yyyy): ");
+    scanf_s("%d/%d/%d", &m, &d, &y);
+
+    printf("Item\t\tUnit   \t\tPurchase\n");
+    printf("    \t\tPrice  \t\tDate\n");
+    printf("%-d\t\t$%7.2f\t%d%2.2d%d\n", item, price, y, m, d);
+
+    return 0;
+}
