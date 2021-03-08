@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+#define FRACTION 0.05f
+
+int main(void) {
+	float dollars;
+
+	printf("Enter an amount: ");
+	scanf_s("%f", &dollars);
+
+	printf("With tax added: $%.2f\n",
+		dollars + dollars * FRACTION);
+
+	return 0;
+}
