@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+#define FRACTION 4.0f/3.0f
+#define PI 3.14159f
+
+int main(void) {
+	float radius;
+
+	printf("Please enter a radius: ");
+	scanf_s("%f", &radius);
+
+	printf("The volume of a sphere with 10-meter radius is: %f\n",
+		FRACTION * PI * radius * radius * radius);
+
+	return 0;
+}
